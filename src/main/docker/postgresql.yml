@@ -1,0 +1,11 @@
+version: '2'
+services:
+    demoj2code-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/DemoJ2code/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=DemoJ2code
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
